@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "Gen AI Training Module 4 API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Calculate Age",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\": \"1990-01-01\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/calculate-age",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "calculate-age"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Wikipedia",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\": \"Europe\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/search-wiki",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "search-wiki"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Bing",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\": \"cute kittens on vespas\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/search-bing",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "search-bing"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
